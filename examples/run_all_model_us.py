@@ -67,7 +67,7 @@ def create_env():
     temp_dir = tempfile.mkdtemp()
     env_path = Path(temp_dir).absolute()
     sys.stderr.write(f"Creating Virtual Environment with path: {env_path}...\n")
-    execute(f"conda create --prefix {env_path} python=3.7 -y")
+    execute(f"conda create --prefix {env_path} python=3.9 -y")
     python_path = env_path / "bin" / "python"  # TODO: FIX ME!
     sys.stderr.write("\n")
     # get anaconda activate path
